@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+
+0
+1   0
+A
+
+6.0
+F 	1						!TRANSIENT_FLAG (T if any parameters other than MF2K fluxes and injected mass flux is transient; F otherwise), READ_TIMES_FILE (1 read temp. disc. from a file; 0 if specified bellow)
+time_disc.dat				!file with time discretization. Must be the same for all transient parameters (for the moment)
+
+
+
+1    1    10
+not_used 			1.0 	1 	0
+not_used 			1.0 	1 	0
+not_used 			10.0 	1 	0
+not_used 			1.0		1	0
+0 0 0 0 0 1
+
+
+
+optimum_dt
+0.1  1.0  1.0  0.1  0.1  0.1
+
+
+
+T
+Eulerian
+not_used   					0.0  1  0  F  		!file,const,ivar,flag,trans
+not_used   					0.0  1  0  F		!file,const,ivar,flag,trans
+not_used   					-10.0  1  0  F		!file,const,ivar,flag,trans
+not_used   					0.3  1  0  F		!file,const,ivar,flag,trans
+
+
+
+T
+not_used       		1.0     1 	0
+not_used       		1.0		1 	0
+not_used       		1.0 	1 	0
+not_used       		0.0 	1 	0
+not_used       		0.0 	1 	0
+not_used       		0.0 	1 	0
+1.0  1.0  1.0  1.0  1.0
+1.0  1.0  1.0  1.0  1.0
+
+
+
+F
+spherical_diffusion
+10
+not_used			0.037	1	0
+not_used			0.3		1	0
+
+
+
+
+
+F
+linear
+not_used 			2.9		1	0
+not_used 			13.08	1	0
+
+
+
+F
+1
+B
+serial
+not_used 			0.0042	1	0
+not_used 			0.00	1	0
+not_used 			0.0042	1	0
+
+
+
+F
+0   0
+
+
+
+0
+mnw2_package
+D:\Transient_Recharge\SteadyState\3_OUTPUTS_WeakSink\Qmnw\Qmnw_real1_d1_r2.80
+1
+0.1  ZZ  1
+
+
+
+1
+point    GENERAL
+0.00005  0  1
+0.5 0.5 99.9
+mass_flux.dat  1.0
+
+
+
+F
+2
+[ D1 AND D3 AND D5 AND D7 AND D9 AND D11 AND D13 AND D15 --> D2 AND D4 AND D6 AND D8 AND D10 AND D12 AND D14 ]
+recircul_tf_odd.dat  	1.0
+[ D2 AND D4 AND D6 AND D8 AND D10 AND D12 AND D14 --> D1 AND D3 AND D5 AND D7 AND D9 AND D11 AND D13 AND D15 ]
+recircul_tf_even.dat  	1.0
+
+
+
+
+  0
+  0
+  6.0   10   1.0
+
+  0
+  1    100   plugin   -10.   0. 6.0
+  1    	1
+  0    	1	-2
+
+
+

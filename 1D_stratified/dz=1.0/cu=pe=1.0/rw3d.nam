@@ -1,0 +1,17 @@
+rw3d.inp
+btc.dat
+cbtc.dat
+rw3d_part_evol.dat
+rw3d_part_path.dat
+spacemom.dat
+rw3d_xyz_plane_mom.dat
+rw3d_xyz_plane_location.dat
+rw3d_dil_index.dat
+rw3d_radial_spat_mom.dat
+rw3d_temp_mom.dat
+rw3d_plane_dispersivity.dat
+rw3d_time.dat
+rw3d_velocities_TECPLOT.dat
+rw3d_dBTCs.dat
+dbg.dbg
+exit_part.dat
